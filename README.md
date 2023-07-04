@@ -1,4 +1,4 @@
-# engi_laptop_script
+# laptop-setup-script
 
 2i Engineering Laptop Tooling Setup.
 
