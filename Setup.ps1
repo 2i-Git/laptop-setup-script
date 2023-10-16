@@ -2,6 +2,9 @@ powershell Set-ExecutionPolicy RemoteSigned
 
 $confirmInput = Read-Host "The installation process will take some time to complete. Ensure that laptop is connected to mains power. Press any key followed by enter to continue"
 
+# Install Chocolatey
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
 # Write-Host "Removing Windows 10 Garbage"
 # Remove Windows 10 Garbage
 #Get-AppxPackage *3dbuilder* | Remove-AppxPackage
