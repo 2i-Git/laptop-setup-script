@@ -2,38 +2,6 @@ powershell Set-ExecutionPolicy RemoteSigned
 
 $confirmInput = Read-Host "The installation process will take some time to complete. Ensure that laptop is connected to mains power. Press any key followed by enter to continue"
 
-# Write-Host "Removing Windows 10 Garbage"
-# Remove Windows 10 Garbage
-#Get-AppxPackage *3dbuilder* | Remove-AppxPackage
-#Get-AppxPackage *windowsalarms* | Remove-AppxPackage
-#Get-AppxPackage *windowscalculator* | Remove-AppxPackage
-#Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
-#Get-AppxPackage *windowscamera* | Remove-AppxPackage
-#Get-AppxPackage *officehub* | Remove-AppxPackage
-#Get-AppxPackage *skypeapp* | Remove-AppxPackage
-#Get-AppxPackage *getstarted* | Remove-AppxPackage
-#Get-AppxPackage *zunemusic* | Remove-AppxPackage
-#Get-AppxPackage *windowsmaps* | Remove-AppxPackage
-#Get-AppxPackage *solitairecollection* | Remove-AppxPackage
-#Get-AppxPackage *bingfinance* | Remove-AppxPackage
-#Get-AppxPackage *zunevideo* | Remove-AppxPackage
-#Get-AppxPackage *bingnews* | Remove-AppxPackage
-#Get-AppxPackage *onenote* | Remove-AppxPackage
-#Get-AppxPackage *people* | Remove-AppxPackage
-#Get-AppxPackage *windowsphone* | Remove-AppxPackage
-#Get-AppxPackage *photos* | Remove-AppxPackage
-#Get-AppxPackage *windowsstore* | Remove-AppxPackage
-#Get-AppxPackage *bingsports* | Remove-AppxPackage
-#Get-AppxPackage *soundrecorder* | Remove-AppxPackage
-#Get-AppxPackage *bingweather* | Remove-AppxPackage
-#Get-AppxPackage *xboxapp* | Remove-AppxPackage
-
-# Write-Host "Setting Windows 10 Taskbar"
-# Remove News & Interests From Taskbar
-#Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Feeds" -Name "ShellFeedsTaskbarViewMode" -Value 2
-# Group Taskbar Items Only When Full
-#Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "TaskbarGlomLevel" -Value 1
-
 Write-Host "Package Installations"
 # Install Chocolatey
 choco install chocolatey-core.extension
@@ -67,7 +35,6 @@ choco install obs-studio -y
 choco install oldcalc -y
 choco install openvpn -y
 choco install paint.net -y
-choco install rpi-imager -y
 choco install slack -y
 choco install vlc -y
 choco install zoom -y
@@ -80,7 +47,7 @@ choco install googlechrome -y
 # Install GIT
 choco install git -y
 choco install github-desktop -y
-# Install Language Tooling (Java at Version 20)
+# Install Language Tooling (Java at Version 21)
 choco install openjdk -y
 choco install maven -y
 choco install ant -y
